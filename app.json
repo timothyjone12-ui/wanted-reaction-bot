@@ -1,0 +1,47 @@
+{
+    "name": "auto-reaction-bot",
+    "description": "A Telegram Bot that automatically reacts to posts in Telegram Channels, groups, and private messages, developed as a serverless application.",
+    "repository": "https://github.com/Malith-Rukshan/Auto-Reaction-Bot",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "The Telegram bot token (Generate from BotFather)",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "The username you have set for your bot.",
+        "required": true
+      },
+      "EMOJI_LIST": {
+        "description": "A string of emojis that the bot will use to react to messages.",
+        "required": true
+      },
+      "RANDOM_LEVEL": {
+        "description": "Randomness of group chat reactions from 0 to 10; higher values mean fewer reactions (Optional)",
+        "required": false,
+        "value": "0"
+      },
+      "RESTRICTED_CHATS": {
+        "description": "A list of chat IDs where the bot should not react to messages (Optional)",
+        "required": false
+      },
+      "WEBHOOK_SECRET": {
+        "description": "Secret token used to verify webhook requests come from Telegram. Use the same value in setWebhook (Optional)",
+        "required": false
+      },
+      "PORT": {
+        "description": "Port to run the app on",
+        "required": false,
+        "value": "3000"
+      },
+      "LOG_LEVEL": {
+        "description": "Logging verbosity: silent, error, warn, info, or debug (Optional)",
+        "required": false,
+        "value": "info"
+      }
+    },
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    }
+  }  

@@ -1,0 +1,19 @@
+{
+  "name": "wanted-reaction-bot",
+  "version": "1.2.0",
+  "description": "A Telegram Bot that automatically reacts to posts in Telegram Channels, groups, and private messages, developed as a serverless application.",
+  "main": "api/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node api/index.js",
+    "vercel": "npx vercel dev",
+    "cloudflare": "npx wrangler dev"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
